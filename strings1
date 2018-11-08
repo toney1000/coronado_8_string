@@ -1,0 +1,59 @@
+    public static void main(String[] args) {
+        boolean t = true;
+        //a true or false 
+        while(t==true){
+            
+        Scanner sc = new Scanner(System.in);
+        //takes user input
+        System.out.println("What's your name?");
+        
+        String name = sc.nextLine();
+        //creates a string that rembers the users name
+       
+        System.out.println("Well, " + name.trim() + " can you answer some questions?");
+        
+        String yon = sc.nextLine().toLowerCase();
+        // creates a string that will take the users answer
+        if (yon.contains("y")){
+        //checks if the user wants to play
+        
+        System.out.println("whats your favorite show?");
+        String school = sc.nextLine().toLowerCase();
+         //creates a string that rembers the users name
+        if(school.contains("riverdale")){
+            System.out.print("AMAZING");
+            //reminds you riverdale is the best show
+        }
+        System.out.println("What season are you on?");
+        String grade = sc.nextLine().toLowerCase();
+        //creates a string that rembers the users season 
+        System.out.println("What episode are you on?");
+        int i = sc.nextInt();
+         //creates a string that rembers the users episode
+      
+         
+        System.out.println("name: "+name.trim());
+    System.out.println("show: "+show.trim());
+    System.out.println("season: "+season.trim());
+        //The trim method will remove any unnecessary spaces
+    System.out.println("episode: "+episode.trim());
+        t=false; //finishes the build
+        //t = false will let the build finish
+            }
+        else if(yon.contains("n")){
+            System.out.println("BYEEE !");
+            t=false; //finishes the build
+        }
+        else{
+        System.out.println("It seems there has been an error try again");
+          
+        }
+        }
+         
+    }
+    
+}
+
+}
+
+
